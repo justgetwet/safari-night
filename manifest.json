@@ -6,8 +6,7 @@
   "background_color": "transparent",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "start_url": "/safari-night/",
   "lang": "ja-jp",
   "icons": [
     {
