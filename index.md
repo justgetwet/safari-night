@@ -4,12 +4,12 @@ title: "Top Page"
 ---
 
 <main>
-  <h3>Posts</h3>
   <section>
+    <h3 class="posts-tag">Posts</h3>
     {% for post in site.posts %}
       <aside>
         <h3>
-          <div class="c-flex">
+          <div class="post-items">
             <div class="date">{{ post.date | date: "%b %d, %y"}}</div>
             <div class="title">
               <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
