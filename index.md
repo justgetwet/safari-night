@@ -4,7 +4,6 @@ title: "Top Page"
 ---
 
 <main>
-  <section>
     <h3 class="posts-tag">Posts</h3>
     {% for post in site.posts %}
       <aside>
@@ -18,5 +17,4 @@ title: "Top Page"
         </h3>
       </aside>  
     {% endfor %}
-  </section>
 </main>

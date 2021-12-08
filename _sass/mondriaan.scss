@@ -1,14 +1,13 @@
-$primaryColor: #02070b; // saffri night monochromatic dark ?
-$secondaryColor: #e60012; // mondriaan red *
-$subColor: #e6e5ef; // bright neptune *
+$primaryColor: #092237; // saffri night
+$secondaryColor: #e60012; // mondriaan red
+$subColor: #f2f1f6; // bright neptune *light
 
-$noteColor: #f2efec; // jazz brown more light
+$backgroundColor: $subColor;
+$noteColor: #fdfdfe; // bright neptune *more light
+$headerColor: #02070b; // saffri night *monochromatic dark ?
+$bodyColor: #040F18; // safari night *dark
 
-$backgroundColor: #eae6e0; // jazz brown light
-$headerColor: $primaryColor;
-$bodyColor: #040F18; // safari night dark
-
-$rectColor: #092237; // safari night
+$rectColor: $primaryColor;
 $glassColor: $subColor;
 $liquidColor: $secondaryColor;
 

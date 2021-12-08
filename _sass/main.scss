@@ -1,9 +1,6 @@
 @import url(normalize.css);
 @import url(syntax.css);
-// @import "nihonkai.scss";
-//@import "biarritz.scss";
 @import "mondriaan.scss";
-// @import "redshot.scss";
 
 $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 $codeFont: Inconsolata, Monaco, Consolas, "Courier New", Courier, monospace;
@@ -29,6 +26,7 @@ $fontSize-4: 1.25rem;
 $fontSize-5: 1.625rem;
 $fontSize-6: 2rem;
 
+
 html {
     font-size: $fontSize-root;
     line-height: $lineHeight-normal;
@@ -43,52 +41,74 @@ body {
 }
 
 header {
-  a {
-    color: $titleColor;
-    margin-left: $spacing-1;
-    text-decoration: none;
-  }
-  .header-line {
+  .header-items {
     display: flex;
     align-items: center;
-    margin-left: $spacing-2;
-    .icon-circle {
-      fill: $rectColor;
-    }
-    .icon-glass {
-      fill: $glassColor;
-    }
-    .icon-liquid {
-      fill:$liquidColor;
-    }
+    margin-left: $spacing-1;
+    margin-bottom: 0;
+    // .icon-circle {
+    //   fill: $rectColor;
+    // }
+    // .icon-glass {
+    //   fill: $glassColor;
+    // }
+    // .icon-liquid {
+    //   fill:$liquidColor;
+    // }
     .header-title {
+      // align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      margin-left: $spacing-2;
       h1 {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0;
+        a {
+          color: $titleColor;
+          text-decoration: none;
+        }
       }
-      hr {
-        width: 110%;
-        height: 1px;
-        margin-top: 0;
-        border-width: 1px;
-      }
-    }
-    .git-icon {
-      fill: $rectColor;
-      margin-top: auto;
-      margin-bottom: $spacing-1;
-      margin-left: auto;
-      margin-right: $spacing-2;
-      svg {
-        margin-left: 3px;
+      h5 {
+        color: $bodyColor;
+        margin-top: $spacing-2;
+        // margin-bottom: 0;
       }
     }
   }
   
 }
 
+main {
+  // background-color: $backgroundColor;
+  margin-top: 0;
+  margin-left: $spacing-1;
+  margin-right: $spacing-1;
+  margin-bottom: $spacing-4;
+  a {
+    color: $headerColor;
+    // margin-left: $spacing-1;
+  }
+  .posts-tag {
+    margin-top: 0;
+    margin-left: $spacing-1;
+  }
+  .post-items {
+    margin-top: 0;
+    margin-left: $spacing-2;
+    display: flex;
+    .date {
+      width: 6.875rem;
+    }
+    .title {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 footer {
-  // margin-top: $spacing-2;
-  margin-left: $spacing-2;
+  // margin-left: $spacing-2;
   .footer-items {
     margin-left: $spacing-1;
     display: flex;
@@ -113,34 +133,9 @@ footer {
 }
 
 
-main {
-  margin-top: $spacing-1;
-  // margin-left: $spacing-3;
-  margin-bottom: $spacing-4;
-  a {
-    color: $headerColor;
-    // margin-left: $spacing-1;
-  }
-  .posts-tag {
-    margin-left: $spacing-2;
-  }
-  .post-items {
-    margin-left: $spacing-3;
-    display: flex;
-    .date {
-      width: 6.875rem;
-    }
-    .title {
-      a {
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-section {
-  margin-left: $spacing-1;
-}
+// section {
+//   margin-left: $spacing-1;
+// }
 
 article {
   background-color: $noteColor;
@@ -148,20 +143,20 @@ article {
   padding-bottom: $spacing-4;
   padding-left: $spacing-2;
   padding-right: $spacing-2;
-  margin-top: $spacing-4;
+  margin-top: $spacing-6;
   margin-bottom: $spacing-4;
-  .posted_home {
-      display: flex;
-      p {
-          font-weight: 600;
-      }
-      a {
-          margin-top: $spacing-2;
-          margin-right: $spacing-1;
-      }
-      .blank {
-          flex-grow: 1;
-      }
+  .posted {
+    display: flex;
+    p {
+        font-weight: 600;
+    }
+    a {
+        margin-top: $spacing-2;
+        margin-right: $spacing-1;
+    }
+    .p_blank {
+        flex-grow: 1;
+    }
   }
 
 }
@@ -178,7 +173,7 @@ nav {
       padding: $spacing-px;
     }
   }
-  .center_blank {
+  .n_blank {
     flex-grow: 1;
     }
 }

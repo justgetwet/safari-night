@@ -3,9 +3,23 @@ layout: post
 title: "rubyとbundler"
 ---
 
-Jekyllは静的サイトジェネレータ（SSG）としては古く2013年にリリースされている。まだrubyとrailsに勢いがあった頃か。そのためネット上では古い情報もあり、rubyやweb技術に馴染みがないとハマりどころも多い。<br/>
+### Ruby
 
-[公式サイト](http://jekyllrb-ja.github.io/)を参考に環境を作るのだが、クイックスタートなどに掲載されている gem install bundler jekyll を叩くと環境が汚れるのでお勧めしない。
+Jekyllは静的サイトジェネレータ（SSG）としては古く2008年にリリースされている。まだrubyとrailsに勢いがあった頃か。自分もrubyをよく書いた時期もあったが、最近はpythonばかり。やはりrubyは楽しいので、rubyの環境・スキルを保つためにJekyllを使うという一面もある。実はJekyllでrubyのコードを書くことは殆どないのだが。
+
+### 公式のクイックスタートに注意
+
+そのためネットでは新旧の情報があり、基本的に[公式サイト](http://jekyllrb-ja.github.io/)をベースにするべき。
+
+クイックスタートなどに掲載されている gem install bundler jekyll を叩くと環境が汚れるので注意。
+
+### Gem
+
+Jekyllは結構沢山の
+
+のでお勧めしない。はじめは混乱することもある。当然rubyやweb技術に馴染みがないとハマりどころも多い。<br/>
+
+に環境を作るのだが、
 
 ### rubyインストール
 

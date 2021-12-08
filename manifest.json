@@ -1,7 +1,7 @@
 {
-  "name" : "look for Dr.Hyde",
-  "short_name": "Dr.Hyde",
-  "description": "A progressive webapp template built with Jekyll",
+  "name" : "Look for Mr.Hyde",
+  "short_name": "Mr.Hyde",
+  "description": "The website built with Jekyll",
   "theme_color": "transparent",
   "background_color": "transparent",
   "display": "standalone",

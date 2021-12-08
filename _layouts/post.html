@@ -3,9 +3,9 @@ layout: default
 ---
 <main>
   <article>
-      <div class="posted_home">
+      <div class="posted">
         <p>Posted: {{ page.date | date: "%b %d, %Y" }}</p>
-        <div class="blank"></div>
+        <div class="p_blank"></div>
         <a href="{{ "/" | relative_url }}" title="Home">
             <img src="{{ "/assets/icons/home.svg" | relative_url }}" height="18" width="18" />
           </a>
@@ -25,7 +25,7 @@ layout: default
         </a>
       {% endif %}
     </div>
-    <div class="center_blank"></div>
+    <div class="n_blank"></div>
     <div>
       {% if page.next %}
         <a href="{{ page.next.url | relative_url }}" title="Next Post: {{page.next.title}}">
