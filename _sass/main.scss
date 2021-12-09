@@ -23,7 +23,8 @@ $fontSize-1: 0.875rem;
 $fontSize-2: 1rem;
 $fontSize-3: 1.125rem;
 $fontSize-4: 1.25rem;
-$fontSize-5: 1.625rem;
+// $fontSize-5: 1.625rem;
+$fontSize-5: 1.5rem;
 $fontSize-6: 2rem;
 
 
@@ -36,32 +37,36 @@ body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
-  margin: $spacing-8;
+  margin: $spacing-7 $spacing-8;
   max-width: 700px;
 }
+
+// .icon-circle {
+//   fill: $rectColor;
+// }
+// .icon-glass {
+//   fill: $glassColor;
+// }
+// .icon-liquid {
+//   fill:$liquidColor;
+// }
 
 header {
   .header-items {
     display: flex;
     align-items: center;
     margin-left: $spacing-1;
+    margin-top: 0;
     margin-bottom: 0;
-    // .icon-circle {
-    //   fill: $rectColor;
-    // }
-    // .icon-glass {
-    //   fill: $glassColor;
-    // }
-    // .icon-liquid {
-    //   fill:$liquidColor;
-    // }
     .header-title {
       // align-items: center;
       display: flex;
       flex-direction: column;
       justify-content: left;
+      margin-top: 0;
       margin-left: $spacing-2;
       h1 {
+        margin-top: $spacing-3;
         margin-bottom: 0;
         a {
           color: $titleColor;
@@ -79,31 +84,35 @@ header {
 }
 
 main {
-  // background-color: $backgroundColor;
   margin-top: 0;
   margin-left: $spacing-1;
   margin-right: $spacing-1;
   margin-bottom: $spacing-4;
-  a {
-    color: $headerColor;
-    // margin-left: $spacing-1;
-  }
-  .posts-tag {
+
+  .tag {
     margin-top: 0;
     margin-left: $spacing-1;
   }
   .post-items {
-    margin-top: 0;
     margin-left: $spacing-2;
+    color: $bodyColor;
     display: flex;
     .date {
       width: 6.875rem;
     }
     .title {
       a {
+        color: $headerColor;
         text-decoration: none;
       }
     }
+  }
+}
+
+aside {
+  h3 {
+    margin-top: 0;
+    margin-bottom: $spacing-2;
   }
 }
 
@@ -125,8 +134,9 @@ footer {
   hr {
     width: 100%;
     border: 0 none;
-    // background-color: #b3b3b3;
-    background: $bodyColor;
+    height: 1px;
+    // background-color: #adadad;
+    background: #5c5c5c;
     margin-top: $spacing-2;
     margin-bottom: 0;
   }
@@ -143,22 +153,31 @@ article {
   padding-bottom: $spacing-4;
   padding-left: $spacing-2;
   padding-right: $spacing-2;
-  margin-top: $spacing-6;
+  margin-top: $spacing-2;
   margin-bottom: $spacing-4;
   .posted {
     display: flex;
+    // margin-bottom: 0;
     p {
         font-weight: 600;
+        margin-bottom: 0;
     }
     a {
         margin-top: $spacing-2;
         margin-right: $spacing-1;
+        margin-bottom: 0;
     }
     .p_blank {
         flex-grow: 1;
     }
   }
-
+  hr {
+    width: 100%;
+    height: 1px;
+    margin: 0 0;
+    border: 0 none;
+    background: $hrColor;
+  }
 }
 
 nav {
@@ -181,12 +200,16 @@ nav {
 // Heading
 
 h1,
-h2,
+h2 {
+  color: $headerColor;
+  font-weight: bold;
+}
+
 h3,
 h4,
 h5,
 h6 {
-  color: $headerColor;
+  color: $bodyColor;
   font-weight: bold;
 }
 
@@ -223,23 +246,22 @@ h6 {
   font-size: $fontSize-1;
 }
 
-hr {
-  width: 64px;
-  height: 1px;
-  margin: 2px 0;
-  border-width: 1px;
-  background: $headerColor;
-}
+// hr {
+//   width: 64px;
+//   height: 1px;
+//   margin: 2px 0;
+//   border-width: 1px;
+//   background: $headerColor;
+// }
 
 p > a {
   color: $linkColor;
 }
 
 p > img {
-  width: 98%;
-  // display: block;
-  // margin: auto;
-  // box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 ul,
@@ -308,17 +330,21 @@ table, td, th {
       margin: 0 0;
     }
   header {
-    .header-line {
+    .header-items {
+      margin-top: 0;
       margin-left: $spacing-1;
+      .header-title {
+        margin-left: $spacing-1;
+      }
     }
-    a {
-      margin-left: 0;
-    }
+    // a {
+    //   margin-left: 0;
+    // }
   }
   main {
-    margin-top: $spacing-2;
+    margin-top: $spacing-1;
     margin-bottom: $spacing-4;
-    .posts-tag {
+    .tag {
       margin-left: $spacing-1;
     }
     .post-items {
@@ -327,6 +353,11 @@ table, td, th {
   }
   footer {
     margin: 0 0;
+  }
+  p > img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 
 }

@@ -1,6 +1,7 @@
 url: "https://justgetwet.github.io"
 baseurl: "/safari-night"
 title: "Mr.Hydeを探して"
+description: "静的サイトジェネレータJekyllの記事"
 github_username: "Akira"
 
 # theme: redshot

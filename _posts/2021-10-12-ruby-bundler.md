@@ -49,3 +49,30 @@ Jeykllはかなりの量のgemを含むので後の依存関係を考えると�
 
 Github Pagesとの依存関係を管理するgemのgithub-pagesというものがあり、これはGithubのバックエンドで動いているgemのバージョンをパッケージしたものか?
 これが必要という場面に会わないので利用していない。
+
+
+
+### Bundler
+
+- [Bundler Official](https://bundler.io/)
+
+gemのパッケージ管理システム。プロジェクトのローカルにgemをインストール、gemのバージョン固定など、Ruby開発環境を支援する。Ruby2.6から標準ライブラリになる。
+
+gemはプロジェクト下のvendor/bundleへinstallされる。
+
+```shell
+bundler --version
+#-> Bundler version 2.2.24
+bundle config path vendor/bundle
+cd .bundle
+cat config
+#-> BUNDLE_PATH: "vendor/bundle"
+```
+
+bundlerの使い方
+
+```shell
+bundle init    #-> Gemfileを作成。
+bundle install #-> Gemfileに書かれたgemをインストール
+bundle exec ruby foo.rb # 実行
+```
